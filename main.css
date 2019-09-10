@@ -13,11 +13,11 @@ html {
 body {
   font-family: "Open Sans",
   sans-serif; 
-  font-size: 1em;;
-  color: #EEE0CB;
+  font-size: 1.2em;;
+  color: #fff1c1;
   text-align: center;
   line-height: 1.5;
-  background-color: #000000;
+  background-color: #293462;
 }
 
 nav,
@@ -41,7 +41,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: #000000;
+  background-color: #293462;
 }
 
 .nav-section {
@@ -87,7 +87,8 @@ header {
 
 section {
   min-height: 200px;
-  padding: 6% 5%;
+  padding-top: 85px;
+  padding-bottom: 10px;
 }
 
 .bio-text {
@@ -101,7 +102,8 @@ li {
 }
 
 .project {
-  width: 75%;
+  width: 60%;
+  border-radius: 10px;
 }
 
 .social {
@@ -111,8 +113,16 @@ li {
 }
 
 .contact {
-  background-color: #2f0b0b;
-  color: navajowhite;
+  padding-top: 10px;
+  background-color: #ffffff;
+  color: #630000;
+}
+.contact a {
+  color: #630000;
+}
+
+.contact ul {
+  padding-left: 0%;
 }
 
 .technologies {
@@ -122,7 +132,7 @@ li {
 }
 
 .trivia {
-  background-color: #2f0b0b;
+  background-color: #a64942;
   border-radius: 10px;
   padding: 0.5em;
   margin: 0.5em;
@@ -134,11 +144,20 @@ li {
 }
 
 .jobreel {
-  background-color: #3e1a1a;
+  background-color: #fe5f55;
   border-radius: 10px;
   padding: 0.5em;
   line-height: 168%;
   margin: 0.5em;
+  color: #293462;
+}
+
+.jobreel a {
+  color: #293462;
+}
+
+.jobreel a:hover {
+  color: #a4c639;
 }
 
 .jobreel:hover {
@@ -147,7 +166,7 @@ li {
 }
 
 .spaced-rep {
-  background-color:#630000;
+  background-color:#a64942;
   border-radius: 10px;
   padding: 0.5em;
   line-height: 168%;
@@ -160,18 +179,41 @@ li {
 }
 
 .vkuss {
-  background-color:#3e1a1a;
+  background-color:#fe5f55;
   border-radius: 10px;
   padding: 0.5em;
   line-height: 168%;
   margin: 0.5em;
+  color: #293462;
 }
 
+.vkuss a {
+  color: #293462;
+}
+
+.vkuss a:hover {
+  color: #a4c639;
+}
 .vkuss:hover {
   transition: 0.3s;
   transform: scale(1.02);
 }
-@media only screen and (min-width: 600px) {
+
+@media screen and (max-width: 768px) {
+  .project {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project {
+    width: 100%;
+  }
+  #hero {
+    padding-top: 100.75px;
+  }
+}
+@media screen and (min-width: 600px) {
   .bio-text {
     width: 50%;
   }
@@ -191,4 +233,12 @@ li {
 
 .hidden {
   display: none;
+}
+
+
+colors {
+  #293462
+  #fff1c1
+  #fe5f55
+  #a64942
 }
